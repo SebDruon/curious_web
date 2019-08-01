@@ -2,8 +2,8 @@
 #define RT_ARDRONE_CONFIG_H
 
 
-#define CuriousWeb_VERSION_MAJOR @CuriousWeb_VERSION_MAJOR@
-#define CuriousWeb_VERSION_MINOR @CuriousWeb_VERSION_MINOR@
+#define VERSION_MAJOR @curious_web_VERSION_MAJOR@
+#define VERSION_MINOR @curious_web_VERSION_MINOR@
 
 
 #endif
