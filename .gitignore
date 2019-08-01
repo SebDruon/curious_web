@@ -1,0 +1,14 @@
+# Files we don't need to track
+
+Makefile
+Makefile.in
+CMakeFile
+
+*~
+.*.swp
+*.o
+*.la
+*.lo
+
+build/*
+src/config.h
