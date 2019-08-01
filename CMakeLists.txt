@@ -1,8 +1,8 @@
 cmake_minimum_required (VERSION 2.6)
 
-project (CuriousWeb)
-set (CuriousWeb_VERSION_MAJOR 0)
-set (CuriousWeb_VERSION_MINOR 1)
+project (curious_web)
+set (curious_web_VERSION_MAJOR 0)
+set (curious_web_VERSION_MINOR 1)
 
 set( CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} /lib /usr/lib /usr/local/lib )
 set( CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} /usr/include /usr/local/include )
@@ -56,15 +56,15 @@ file( GLOB src "src/*.c" )
 
 ### Main Target and linking
 
-add_executable( "CuriousWeb" ${src} )
+add_executable( "curious_web" ${src} )
 
-target_link_libraries ( "CuriousWeb" 
+target_link_libraries ( "curious_web" 
                         ${GTK3_LIBRARIES}
 				        ${WEBKIT2_LIBRARIES} )
 
 ### Install targets
 
-install( TARGETS "CuriousWeb"
+install( TARGETS "curious_web"
         RUNTIME DESTINATION ${INSTALL_BIN_PATH}  COMPONENT main
         LIBRARY DESTINATION ${INSTALL_LIB_PATH}  COMPONENT main
         ARCHIVE DESTINATION ${INSTALL_AR_PATH}   COMPONENT main )
