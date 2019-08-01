@@ -25,6 +25,10 @@ int main(int argc, char *argv[]) {
 	WebKitWebView *webView = WEBKIT_WEB_VIEW(webkit_web_view_new());
 	gtk_container_add(GTK_CONTAINER(main_window), GTK_WIDGET(webView));
 
+    webkit_web_context_set_tls_errors_policy(
+        webkit_web_view_get_context ( webView ), 
+        WEBKIT_TLS_ERRORS_POLICY_IGNORE ) ;
+
 	g_signal_connect(main_window, "destroy",
 			 G_CALLBACK(destroyWindowCb), NULL);
 	g_signal_connect(webView, "close", G_CALLBACK(closeWebViewCb),
