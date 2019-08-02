@@ -17,7 +17,14 @@ user_fct(WebKitWebView * web_view,
 
 
 int main(int argc, char *argv[]) {
-	gtk_init(&argc, &argv);
+
+    if (argc !=2) {
+        fprintf(stderr, "Usage : %s (url) \n", argv[0] ) ;
+        return -1 ;
+    }
+
+
+    gtk_init(&argc, &argv);
 
 	GtkWidget *main_window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 	gtk_window_set_default_size(GTK_WINDOW(main_window), 800, 600);
