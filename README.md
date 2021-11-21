@@ -1,4 +1,4 @@
-# curious_web
+# Curious_web
 
 This app was made as a small example of how to use **webkit2** and **gtk3**.
 This is a very basic web browser, with a neat little extra functionality : it will display the url
@@ -20,7 +20,7 @@ of any resource loaded by the web page : images, fonts, scripts and so on ...
 
 ## Usage
 
-curious_web https://www.codices.org
+curious_web http://www.codices.org
 
-Don't forget the http:// or https:// in the url !
+Note: Don't forget the http:// or https:// in the url !
 
