@@ -11,16 +11,20 @@ of any resource loaded by the web page : images, fonts, scripts and so on ...
 
 ## Build instructions
 
-- git clone https://github.com/druon/curious_web.git
-- cd curious_web
-- cd build
-- cmake ..
-- make
-- (as root) make install
+```
+git clone https://github.com/SebDruon/curious_web.git
+cd curious_web
+cd build
+cmake ..
+make
+(as root) make install
+```
 
 ## Usage
 
+```
 curious_web http://www.codices.org
+```
 
 Note: Don't forget the http:// or https:// in the url !
 
