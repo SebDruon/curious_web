@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.6)
+cmake_minimum_required (VERSION 2.9)
 
 project (curious_web)
 set (curious_web_VERSION_MAJOR 0)
